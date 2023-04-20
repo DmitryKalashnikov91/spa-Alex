@@ -14,7 +14,7 @@ const Home: FC = () => {
     <div className={roboto.className + ' ' + styles.Home}>
       
       <div className={styles.Home_content}>
-        <Image src='/bgmassage.avif' loading='lazy' width={500} height={800} alt='bacground massage'/>
+        <Image src='/SpaMain1.jpg' loading='lazy' width={500} height={800} alt='bacground massage'/>
         <div className={styles.Home_content__text}> 
           <h1 className='ml-10 text-5xl shadow-2xl'>
             Spa Alex

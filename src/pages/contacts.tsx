@@ -9,7 +9,7 @@ const Contacts: FC = () => {
         <h2 className='text-white'>Spa ALex Массажный кабинет</h2>
         <p className='text-white'>находится в ТЦ "Филион" ст. метро Фили, ул. Багратионовский пр-д, дом 5</p>
       </div>
-      <div className='m-3' style={{position: 'relative', overflow:'hidden'}}>
+      <div className='mt-10 mx-3' style={{position: 'relative', overflow:'hidden'}}>
         <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style={{color:'#eee',fontSize:'12px',position:'absolute',top:'0px'}}>
           Москва
           </a>

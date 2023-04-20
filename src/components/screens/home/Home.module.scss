@@ -1,6 +1,6 @@
 .Home {
     h1, main {
-        color: #FFD700
+        color: #FAFAB0
     };
     
     &_content {
@@ -15,5 +15,13 @@
 
        }
     }
+    button {
+        transition: color 0.4s ease-in-out;
+        &:hover {
+            background: #000;
+            color: #c353c3;
+        }
+    }
+   
     
 }

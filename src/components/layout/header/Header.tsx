@@ -1,5 +1,5 @@
 import {FC} from 'react'
-import styles from './Header.module.css'
+import styles from './Header.module.scss'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Image from 'next/image'

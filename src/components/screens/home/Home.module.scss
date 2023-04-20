@@ -1,0 +1,19 @@
+.Home {
+    h1, main {
+        color: #FFD700
+    };
+    
+    &_content {
+       width: 100%;
+       height: 100vh;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       @media (max-width: 900px) {
+            flex-direction: column;
+       margin-top: 10vh;
+
+       }
+    }
+    
+}

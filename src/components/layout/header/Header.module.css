@@ -1,0 +1,18 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.4s ease-in-out;
+    padding: 20px;
+}
+
+
+.Header a:hover, .Header .active {
+    color: #c353c3;
+}
+

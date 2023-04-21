@@ -6,9 +6,13 @@ import Layout from '@/components/layout/Layout';
 import styles from './Home.module.scss'
 import Advantages from '@/components/advantages/Advantages';
 import { useRouter } from 'next/router';
+import type { Metadata } from 'next'
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
-
+export const metadata: Metadata = {
+  title: 'Spa Alex - массажный салон на Филях',
+  description: 'Массажный салон. Фили. Все виды массажа',
+};
 
 const Home: FC = () => {
   const router = useRouter();

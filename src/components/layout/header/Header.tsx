@@ -17,7 +17,7 @@ const Header: FC = () => {
             <li><Link href='/' className={pathname === '/' ? styles.active : '' }>Главная</Link></li>
             <li><Link href='/contacts' className={pathname === '/contacts' ? styles.active : '' }>Контакты</Link></li>
         </ul>
-        <Link href='tel:+79999152567' className='text-end me-9 pt-3'>Телефон: +7(968) 989-33-88</Link>
+        <Link href='tel:+79689893388' className='text-end me-9 pt-3'>Телефон: +7(968) 989-33-88</Link>
     </header>
   )
 }

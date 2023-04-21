@@ -1,0 +1,23 @@
+.Footer {
+    width: 100%;
+    margin-top: 10vh;
+    height: 40vh;
+    background: #2b1f1f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+        &_links {
+            display: flex;
+            gap: 30px;
+            img {
+                transition: all .4s;
+            }
+            img:hover {
+                transform: scale(1.2);
+            }
+    }
+    &_copyright {
+        margin-top: 20vh;
+    }
+}

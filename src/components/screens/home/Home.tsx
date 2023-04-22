@@ -16,10 +16,10 @@ const Home: FC = () => {
   return (
     <Layout>
     <div className={roboto.className + ' ' + styles.Home}>
-    <h1 className={pacifico.className + ' text-3xl text-center pt-10 pb-5'}>Профессиональный массажный салон</h1>
+    <h1 className={pacifico.className + ' text-3xl text-center'}>Профессиональный массажный салон</h1>
       <div className={styles.Home_content}>
         
-        <Image src='/SpaMain1.jpg'  width={500} height={800} alt='bacground massage'/>
+        <Image src='/SpaMain1.jpg'  width={500} height={800} alt='background massage'/>
         <div className={styles.Home_content__text}> 
           <h1 className='text-center text-5xl shadow-2xl'>
             Spa Alex

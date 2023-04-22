@@ -1,7 +1,6 @@
 import {FC} from 'react';
 import Image from 'next/image'
 import { Roboto, Pacifico } from 'next/font/google'
-import Link from 'next/link';
 import Layout from '@/components/layout/Layout';
 import styles from './Home.module.scss'
 import Advantages from '@/components/advantages/Advantages';

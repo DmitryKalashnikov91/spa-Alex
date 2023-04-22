@@ -16,7 +16,7 @@ const Home: FC = () => {
   return (
     <Layout>
     <div className={roboto.className + ' ' + styles.Home}>
-    <h1 className={pacifico.className + ' text-3xl text-center'}>Профессиональный массажный салон</h1>
+    <h1 className={pacifico.className + ' text-3xl text-center relative z-10'}>Профессиональный массажный салон</h1>
       <div className={styles.Home_content}>
         
         <Image src='/SpaMain1.jpg'  width={500} height={800} alt='background massage'/>

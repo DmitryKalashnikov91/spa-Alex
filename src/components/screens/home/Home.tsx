@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import Image from 'next/image'
-import { Roboto } from 'next/font/google'
+import { Roboto, Pacifico } from 'next/font/google'
 import Link from 'next/link';
 import Layout from '@/components/layout/Layout';
 import styles from './Home.module.scss'
@@ -8,6 +8,7 @@ import Advantages from '@/components/advantages/Advantages';
 import { useRouter } from 'next/router';
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
+const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] } )
 
 
 const Home: FC = () => {
@@ -15,9 +16,10 @@ const Home: FC = () => {
   return (
     <Layout>
     <div className={roboto.className + ' ' + styles.Home}>
-      
+    <h1 className={pacifico.className + ' text-3xl text-center pt-10'}>Профессиональный массажный салон</h1>
       <div className={styles.Home_content}>
-        <Image src='/SpaMain1.jpg' loading='lazy' width={500} height={800} alt='bacground massage'/>
+        
+        <Image src='/SpaMain1.jpg'  width={500} height={800} alt='bacground massage'/>
         <div className={styles.Home_content__text}> 
           <h1 className='text-center text-5xl shadow-2xl'>
             Spa Alex

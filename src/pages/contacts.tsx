@@ -6,8 +6,10 @@ const Contacts: FC = () => {
   return (
     <Layout>
       <div className='m-8'>
-        <h2 className='text-white'>Spa ALex Массажный кабинет</h2>
+        <h2 className='text-white'>Spa ALex. Массажный кабинет</h2>
         <p className='text-white'>находится в ТЦ "Филион" ст. метро Фили, ул. Багратионовский пр-д, дом 5, 5-й этаж</p>
+        <h3 className='text-white pt-7'>График работы:</h3>
+        <p className='text-white'>Пн - Вс: с 10:00 до 22:00</p>
         <h3 className='text-white pt-7'>Электронный адрес:</h3>
         <p className='text-white'><a href="mailto:spa.fili2021@gmail.com">spa.fili2021@gmail.com</a></p>
       </div>

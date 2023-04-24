@@ -12,17 +12,26 @@ const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] } )
 
 const Home: FC = () => {
   const router = useRouter();
+
+  
+
   return (
     <Layout>
     <div className={roboto.className + ' ' + styles.Home}>
-    <h1 className={pacifico.className + ' text-3xl text-center relative z-10'}>Профессиональный массажный салон</h1>
+    <h1 className={pacifico.className + ' text-4xl text-center relative z-10'}>Профессиональный массажный салон</h1>
       <div className={styles.Home_content}>
         
         <Image src='/SpaMain1.jpg'  width={500} height={800} alt='background massage'/>
         <div className={styles.Home_content__text}> 
-          <h1 className='text-center text-5xl shadow-2xl'>
-            Spa Alex
-          </h1>
+        <span className={styles.orbs}>
+            <span>Spa Alex</span>
+            {/* <span>p</span>
+            <span>a </span>
+            <span>A</span>
+            <span>l</span>
+            <span>e</span>
+            <span>x</span> */}
+        </span>
           <main className='mx-5 mt-10 text-lg text-center'>
               Массажный салон с профессиональными массажистами. Различные услуги  массажа: Классический, Релакс, Лимфодренажный, Спортивный, Баночный, Антицеллюлитный, массаж лица. А также - все   виды обёртывания
           </main>

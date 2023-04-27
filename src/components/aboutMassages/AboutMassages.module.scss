@@ -1,0 +1,31 @@
+.About {
+    margin-top: 3rem;
+    color: #FAFAB0;
+    align-items: center;
+    text-align: center;
+    h2 {
+        font-size: xx-large;
+    }
+    &_content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+        &__block {
+            margin: 1rem;
+            h3 {
+                color: burlywood;
+                margin-bottom: 1rem;
+                font-size: 22px;
+            }
+            text-align: start;
+            border: 1px solid #FAFAB0;
+            color: azure;
+            padding: 2rem;
+        }
+    }
+}

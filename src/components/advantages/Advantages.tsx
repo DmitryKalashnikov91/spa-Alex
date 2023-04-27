@@ -10,12 +10,12 @@ const advantagesData = [
   },
   {
     id: 2,
-    imgSrc: '/SPA_Alex.jpg',
+    imgSrc: '/place.jpg',
     text: 'Уютный салон'
   },
   {
     id: 3,
-    imgSrc: '/aSpaAlex.jpg',
+    imgSrc: '/plaxe2.jpg',
     text: 'Удобный график: Пн-Вс 10:00 - 22:00'
   },
   {

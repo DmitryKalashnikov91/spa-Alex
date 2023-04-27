@@ -5,6 +5,7 @@ import Layout from '@/components/layout/Layout';
 import styles from './Home.module.scss'
 import Advantages from '@/components/advantages/Advantages';
 import { useRouter } from 'next/router';
+import AboutMassages from '@/components/aboutMassages/aboutMassages';
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
 const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] } )
@@ -25,12 +26,7 @@ const Home: FC = () => {
         <div className={styles.Home_content__text}> 
         <span className={styles.orbs}>
             <span>Spa Alex</span>
-            {/* <span>p</span>
-            <span>a </span>
-            <span>A</span>
-            <span>l</span>
-            <span>e</span>
-            <span>x</span> */}
+            
         </span>
           <main className='mx-5 mt-10 text-lg text-center'>
               Массажный салон с профессиональными массажистами. Различные услуги  массажа: Классический, Релакс, Лимфодренажный, Спортивный, Баночный, Антицеллюлитный, массаж лица. А также - все   виды обёртывания
@@ -40,6 +36,7 @@ const Home: FC = () => {
       </div>
       <h2 className='text-white mt-20 text-2xl text-center'>Наши преимущества</h2>
        <Advantages />
+       <AboutMassages />
     </div>
     </Layout>
   )

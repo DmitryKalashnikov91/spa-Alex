@@ -12,14 +12,14 @@ const icons = [
         alt: 'instIcon'
     },
     {
-        id: 1,
+        id: 2,
         imgSrc: '/vk.svg',
         path: 'https://vk.com/spa_alex',
         size: 26,
         alt: 'vkIcon'
     },
     {
-        id: 1,
+        id: 3,
         imgSrc: '/tg.svg',
         path: 'https://t.me/+4RXEfiXa_C0xNDBi',
         size: 30,

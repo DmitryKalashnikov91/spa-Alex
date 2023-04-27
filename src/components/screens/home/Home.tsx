@@ -5,7 +5,7 @@ import Layout from '@/components/layout/Layout';
 import styles from './Home.module.scss'
 import Advantages from '@/components/advantages/Advantages';
 import { useRouter } from 'next/router';
-import AboutMassages from '@/components/aboutMassages/aboutMassages';
+import AboutMassages from '@/components/aboutMassages/AboutMassages';
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
 const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] } )

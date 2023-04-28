@@ -41,7 +41,7 @@ const ContactForm = () => {
         {
             id: 'wtsp',
             title: 'Записаться через Watsapp',
-            link: 'tel:+79689893388',
+            link: 'https://wa.me/79689893388',
         },
     ];
 
@@ -88,7 +88,7 @@ const ContactForm = () => {
                 <Heading>Записаться на массаж</Heading>
                 <div className={styles.ContactForm_buttons}>
                     {Buttons.map((btn) => (
-                        <div>
+                        <div key={btn.id}>
                             <Link href={btn.link} target='blank'>
                                 {btn.title}
                             </Link>

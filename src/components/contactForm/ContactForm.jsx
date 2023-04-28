@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styles from './ContactForm.module.scss';
 import {
     Container,
     Heading,
@@ -11,6 +12,7 @@ import {
     useToast,
 } from '@chakra-ui/react';
 import { sendContactForm } from '../../lib/api';
+import Link from 'next/link';
 
 const initValues = {
     name: '',
@@ -25,6 +27,23 @@ const ContactForm = () => {
     const [state, setState] = useState(initState);
     const [touched, setTouched] = useState({});
     const toast = useToast();
+    const Buttons = [
+        {
+            id: 'vk',
+            title: 'Записаться через VK',
+            link: 'https://vk.com/spa_alex',
+        },
+        {
+            id: 'tg',
+            title: 'Записаться через Telegram',
+            link: 'https://t.me/+4RXEfiXa_C0xNDBi',
+        },
+        {
+            id: 'wtsp',
+            title: 'Записаться через Watsapp',
+            link: 'tel:+79689893388',
+        },
+    ];
 
     const { values, isLoading, error } = state;
     const handleChange = ({ target }) =>
@@ -64,9 +83,19 @@ const ContactForm = () => {
     };
 
     return (
-        <section className=''>
+        <section className={styles.ContactForm}>
             <Container maxW={'450px'} mt={12}>
                 <Heading>Записаться на массаж</Heading>
+                <div className={styles.ContactForm_buttons}>
+                    {Buttons.map((btn) => (
+                        <div>
+                            <Link href={btn.link} target='blank'>
+                                {btn.title}
+                            </Link>
+                        </div>
+                    ))}
+                </div>
+
                 <span className='mb-4'>
                     Чтобы записаться на массаж позвоните по номеру телефона. Или напишите нам,
                     удобным для вас способом. Укажите дату и любые пожелания и мы свяжемся с вами в

@@ -1,8 +1,12 @@
+@import '../../styles/media';
+
 .About {
     margin-top: 3rem;
-    color: #FAFAB0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    color: #FAFAB0;
     h2 {
         font-size: xx-large;
     }
@@ -12,6 +16,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 60vw;
+        @include media(mobile) {
+            width: 100%;
+        }
         margin-top: 2rem;
         margin-bottom: 3rem;
 
@@ -20,12 +28,18 @@
             h3 {
                 color: burlywood;
                 margin-bottom: 1rem;
+                text-align: center;
                 font-size: 22px;
             }
             text-align: start;
             border: 1px solid #FAFAB0;
             color: azure;
             padding: 2rem;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                background: rgba(57, 34, 61, 0.6);
+                border: 1px solid #52184f;
+            }
         }
     }
 }

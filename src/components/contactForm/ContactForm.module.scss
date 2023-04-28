@@ -1,0 +1,14 @@
+.ContactForm {
+
+
+    &_buttons {
+        display: flex;
+        > div {
+            position: relative;
+            border: 2px solid white;
+            margin-right: 1rem;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    }
+}

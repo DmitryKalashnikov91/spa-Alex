@@ -32,7 +32,7 @@ const Advantages = (props: Props) => {
     <section className={styles.Advantages}>
         
        {advantagesData.map(({id, imgSrc, text, text2}) => (<div key={id} className={styles.Advantages_block}>
-          <Image src={imgSrc} loading='lazy' priority width={150} height={250} alt='spaFili hands' />
+          <Image src={imgSrc} loading='lazy' width={150} height={250} alt='spaFili hands' />
           <span className='text-white text-justify'>{text}<br/>{text2 && `${text2}`}</span>
         </div>) )} 
     </section>

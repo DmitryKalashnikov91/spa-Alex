@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { sendContactForm } from '../../lib/api';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const initValues = {
     name: '',
@@ -30,17 +31,20 @@ const ContactForm = () => {
     const Buttons = [
         {
             id: 'vk',
-            title: 'Записаться через VK',
+            img: '/cib_vk.svg',
+
             link: 'https://vk.com/spa_alex',
         },
         {
             id: 'tg',
-            title: 'Записаться через Telegram',
+            img: '/telegram.svg',
+
             link: 'https://t.me/+4RXEfiXa_C0xNDBi',
         },
         {
             id: 'wtsp',
-            title: 'Записаться через Watsapp',
+            img: '/watsap.svg',
+
             link: 'https://wa.me/79689893388',
         },
     ];
@@ -86,11 +90,11 @@ const ContactForm = () => {
         <section className={styles.ContactForm}>
             <Container maxW={'450px'} mt={12}>
                 <Heading>Записаться на массаж</Heading>
-                <div className={styles.ContactForm_buttons}>
+                <div className='flex justify-between m-5'>
                     {Buttons.map((btn) => (
-                        <div key={btn.id}>
+                        <div key={btn.id} className='m-4'>
                             <Link href={btn.link} target='blank'>
-                                {btn.title}
+                                <Image src={btn.img} width={32} height={32} />
                             </Link>
                         </div>
                     ))}

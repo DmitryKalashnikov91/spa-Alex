@@ -32,10 +32,10 @@ const Advantages = (props: Props) => {
   return (
     <section className={styles.Advantages}>
         {advantagesData.map(({ id, imgSrc, text, text2, pictures}) => (
-            <div className={styles.Advantages_block}>
+            <div className={styles.Advantages_block} key={id}>
               {pictures && (
               <div className={styles.Advantages_grid}>{pictures.map((img) => (
-                <div className={styles.Advantages_grid__items}>
+                <div key={img} className={styles.Advantages_grid__items}>
                   <Image
                   src={img}
                   width={150}
@@ -47,7 +47,7 @@ const Advantages = (props: Props) => {
               </div>
             )
           }
-          <div >
+          <div key={imgSrc}>
             {imgSrc && <Image  src={imgSrc} width={200} height={300} alt={imgSrc}/>}
           </div>
           <span className='text-white text-center'>{text} <p>{text2}</p></span>

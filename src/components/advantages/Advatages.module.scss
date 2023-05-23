@@ -43,13 +43,15 @@
             &:hover {
                 background: rgba(57, 34, 61, 0.6);
                 border: 2px solid #52184f;
-                img {
-                    
-                }
             }
         border: solid 2px #FAFAB0;
-        @include media(mobile) {
+        @include media(laptop) {
+            width: 40vw;
+            height: 80vh;
+        }
+        @include media(tablet) {
         width: 90%;
+        height: 90vh;
         }
         border-radius: 10px;
         span {

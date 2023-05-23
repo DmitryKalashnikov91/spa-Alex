@@ -5,7 +5,8 @@ type Props = {}
 const advantagesData = [
   {
     id: 1,
-    imgSrc: '/SpaHands.jpeg',
+    imgSrc: '',
+    pictures: ['/aSpaAlex.jpg', '/manMass.jpg', '/faceMass.jpg', '/Banki.jpg'],
     text: 'Массажисты с 20ти летним стажем'
   },
   {
@@ -22,7 +23,7 @@ const advantagesData = [
   {
     id: 4,
     imgSrc: '/check.jpg',
-    text: 'Удобное расположение',
+    text: '',
     text2: 'Адрес: м. Фили, Багратионовский проезд, дом 5, ТРЦ «Филион», 5 этаж. На машине въезжаете на парковку 15 уровень ( 2 часа парковка бесплатная ), вход в Алекс фитнес, идете прямо, проходите лифты и слева находимся мы. Если без машины, на лифте 5 этаж, выходите из лифта направо и слева мы.'
   },
 ]
@@ -30,13 +31,32 @@ const advantagesData = [
 const Advantages = (props: Props) => {
   return (
     <section className={styles.Advantages}>
-        
-       {advantagesData.map(({id, imgSrc, text, text2}) => (<div key={id} className={styles.Advantages_block}>
-          <Image src={imgSrc} loading='lazy' width={150} height={250} alt='spaFili hands' />
-          <span className='text-white text-justify'>{text}<br/>{text2 && `${text2}`}</span>
-        </div>) )} 
+        {advantagesData.map(({ id, imgSrc, text, text2, pictures}) => (
+            <div className={styles.Advantages_block}>
+              {pictures && (
+              <div className={styles.Advantages_grid}>{pictures.map((img) => (
+                <div className={styles.Advantages_grid__items}>
+                  <Image
+                  src={img}
+                  width={150}
+                  height={250}
+                  alt={img} 
+                />
+                </div>
+                ))}
+              </div>
+            )
+          }
+          <div >
+            {imgSrc && <Image  src={imgSrc} width={200} height={300} alt={imgSrc}/>}
+          </div>
+          <span className='text-white text-center'>{text} <p>{text2}</p></span>
+            </div>
+          ))
+        }
+      
     </section>
-  )
+    )
 }
 
 export default Advantages

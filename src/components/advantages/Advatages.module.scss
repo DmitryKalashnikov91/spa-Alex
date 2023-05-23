@@ -1,3 +1,5 @@
+@import '../../styles/media';
+
 .Advantages {
     display: flex;
     gap: 2rem;
@@ -6,11 +8,34 @@
     justify-content: center;
     margin-top: 5vh;
 
+    &_grid {
+       
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            &__items {
+               > img {
+                height: 180px;
+                width: auto;
+                &:hover {
+                    transform: scale(1.4) translateX(-1rem);
+                    
+                }
+                
+               }
+            }
+    }
+
     &_block {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 20vw;
+        height: 70vh;
         transition: all 0.4s ease-in-out;
         img {
             transition: all 0.4s ease-in-out;
@@ -19,14 +44,13 @@
                 background: rgba(57, 34, 61, 0.6);
                 border: 2px solid #52184f;
                 img {
-                    transform: scale(1.4);
+                    
                 }
             }
         border: solid 2px #FAFAB0;
-        @media (max-width: 900px) {
-        width: 80%;
+        @include media(mobile) {
+        width: 90%;
         }
-        padding: 20px;
         border-radius: 10px;
         span {
             padding: 20px 10px;

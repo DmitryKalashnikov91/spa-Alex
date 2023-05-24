@@ -13,11 +13,10 @@
     &_content {
        width: 100%;
        display: flex;
-       align-items: center;
        &__btn {
         background-color: #c353c3;
         transition: color 0.4s ease-in-out;
-        padding: 10px 70px;
+        padding: 10px 100px;
         color: white;
         margin-top: 10%;
         font-size: xx-large;

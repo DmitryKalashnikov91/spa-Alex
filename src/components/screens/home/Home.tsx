@@ -30,10 +30,11 @@ const Home: FC = () => {
         </span>
           <main className='mx-5 mt-10 text-lg text-center'>
               Массажный салон с профессиональными массажистами. Различные услуги  массажа: Классический, Релакс, Лимфодренажный, Спортивный, Баночный, Антицеллюлитный, массаж лица. А также - все   виды обёртывания
+              <button className={styles.Home_content__btn} onClick={() => router.push('/contacts')}>ЗАПИСАТЬСЯ</button>
           </main>
           
       </div>
-      <button className={styles.Home_content__btn} onClick={() => router.push('/contacts')}>ЗАПИСАТЬСЯ</button>
+      
       </div>
       <h2 className='text-white mt-20 text-2xl text-center'>Наши преимущества</h2>
        <Advantages />

@@ -2,10 +2,12 @@ import Layout from '@/components/layout/Layout';
 import ContactForm from '@/components/contactForm/ContactForm.jsx';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../config/theme';
+import Header from '@/components/layout/header/Header';
 
 const Contacts = () => {
     return (
         <Layout>
+            <Header />
             <section className='m-8'>
                 <h2 className='text-white'>Spa ALex. Массажный кабинет</h2>
                 <p className='text-white'>

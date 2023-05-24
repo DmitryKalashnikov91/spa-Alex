@@ -64,7 +64,7 @@ const massageDB: TypeMassages[]= [
 
 const AboutMassages: FC = () => {
   return (
-    <section className={styles.About}>
+    <section className={styles.About} id='about'>
         <h2>Мы предлагаем:</h2>
         <div className={styles.About_content}>
                 {massageDB.map(({id, name, text, price, time}) => (<div className={styles.About_content__block} key={id}>

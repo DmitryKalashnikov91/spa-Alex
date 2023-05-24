@@ -22,16 +22,15 @@ const Home: FC = () => {
     <h1 className={pacifico.className + ' text-4xl text-center relative z-10'}>Профессиональный массажный салон</h1>
       <div className={styles.Home_content}>
         
-        <Image src='/SpaMain1.jpg'  width={500} height={800} alt='background massage'/>
-        <div className={styles.Home_content__text}> 
+        <Image src='/SpaMain1.jpg'  width={400} height={700} alt='background massage'/>
+        <div className={styles.Home_content}> 
         <span className={styles.orbs}>
             <span>Spa Alex</span>
-            
         </span>
-          <main className='mx-5 mt-10 text-lg text-center'>
+        <div className='mt-10 text-lg text-center text-white'>
               Массажный салон с профессиональными массажистами. Различные услуги  массажа: Классический, Релакс, Лимфодренажный, Спортивный, Баночный, Антицеллюлитный, массаж лица. А также - все   виды обёртывания
               <button className={styles.Home_content__btn} onClick={() => router.push('/contacts')}>ЗАПИСАТЬСЯ</button>
-          </main>
+        </div>
           
       </div>
       

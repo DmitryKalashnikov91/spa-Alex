@@ -47,7 +47,7 @@ const Advantages = (props: Props) => {
               </div>
             )
           }
-          <div key={imgSrc}>
+          <div key={imgSrc} className={styles.Advantages_about}>
             {imgSrc && <Image  src={imgSrc} width={200} height={300} alt={imgSrc}/>}
           </div>
           <span className='text-white text-center'>{text} <p>{text2}</p></span>

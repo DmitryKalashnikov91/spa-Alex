@@ -6,7 +6,7 @@ const CONTACT_MESSAGE_FIELDS = {
     email: 'Email',
     phone: 'Телефон',
     date: 'Дата',
-    message: 'Сообщние',
+    message: 'Сообщение',
 };
 
 const generateEmailContent = (data) => {

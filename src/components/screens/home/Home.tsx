@@ -12,7 +12,7 @@ const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
 const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] } )
 
 
-const Home: FC = () => {
+const Home: FC = (): JSX.Element => {
   const router = useRouter();
 
   
@@ -34,9 +34,7 @@ const Home: FC = () => {
         </button>
         </div>
         <div className={styles.Home_content}> 
-        {/* <span className={styles.orbs}>
-            <span>Spa Alex</span>
-        </span> */}
+        
         
         <div className='mt-10 text-lg text-center text-white'>
               <p className='p-5'>Массажный салон с профессиональными массажистами. Различные услуги  массажа: Классический, Релакс, Лимфодренажный, Спортивный, Баночный, Антицеллюлитный, массаж лица. А также - все   виды обёртывания</p>

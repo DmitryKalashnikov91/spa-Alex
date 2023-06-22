@@ -2,11 +2,11 @@
 import { mailOptions, transporter } from '../../config/nodemailer';
 
 const CONTACT_MESSAGE_FIELDS = {
-    name: 'Имя',
-    email: 'Email',
-    phone: 'Телефон',
-    date: 'Дата',
-    message: 'Сообщение',
+    name: 'Имя:',
+    email: 'Email:',
+    phone: 'Телефон:',
+    date: 'Дата:',
+    message: 'Сообщение:',
 };
 
 const generateEmailContent = (data) => {

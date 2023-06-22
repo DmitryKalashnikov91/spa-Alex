@@ -1,14 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { mailOptions, transporter } from '../../config/nodemailer';
-type TypeContacts = {
-    name: string,
-    email: string,
-    phone: string,
-    date: string,
-    message: string
-}
 
-const CONTACT_MESSAGE_FIELDS: TypeContacts[] = {
+const CONTACT_MESSAGE_FIELDS = {
     name: 'Имя',
     email: 'Email',
     phone: 'Телефон',
@@ -16,12 +9,12 @@ const CONTACT_MESSAGE_FIELDS: TypeContacts[] = {
     message: 'Сообщние',
 };
 
-const generateEmailContent = (data: TypeContacts): object => {
-    const stringData: string = Object.entries(data).reduce(
+const generateEmailContent = (data) => {
+    const stringData = Object.entries(data).reduce(
         (str, [key, value]) => (str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${value}} \n \n`),
         '',
     );
-    const htmlData: string = Object.entries(data).reduce(
+    const htmlData = Object.entries(data).reduce(
         (str, [key, value]) =>
             (str += `<h1 class="form-heading" align="left">${CONTACT_MESSAGE_FIELDS[key]}</h1><p class="form-answer" align="left">${value}</p>`),
         '',
@@ -33,7 +26,7 @@ const generateEmailContent = (data: TypeContacts): object => {
     };
 };
 
-const handler = async (req: any, res: any) => {
+const handler = async (req, res) => {
     if (req.method === 'POST') {
         const data = req.body;
         if (!data.name || !data.email || !data.phone) {
@@ -47,7 +40,7 @@ const handler = async (req: any, res: any) => {
                 date: data.date,
             });
             return res.status(200).json({ success: true });
-        } catch (error: any) {
+        } catch (error) {
             return res.status(400).json({ message: error.message });
         }
     }

@@ -3,7 +3,7 @@ import Footer from "./footer/Footer";
 import Head from "next/head";
 import ArrowUp from '../arrowUp/ArrowUp'
 
-const Layout: FC<PropsWithChildren<unknown>> = ({ children }) => {
+const Layout: FC<PropsWithChildren<unknown>> = ({ children }): JSX.Element => {
     return ( 
         <>
             <Head>

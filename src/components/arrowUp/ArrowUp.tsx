@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, FC } from 'react';
 
 import styles from './ArrowUp.module.scss';
 
-const ArrowUp = () => {
-    const [scrollTop, setScrollTop] = useState(false);
+const ArrowUp: FC = (): JSX.Element | null => {
+    const [scrollTop, setScrollTop] = useState<boolean>(false);
     useEffect(() => {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {

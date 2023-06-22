@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 
 
-const Header: FC = () => {
+const Header: FC = ():JSX.Element => {
     const {pathname} = useRouter();
   return (
     <header className={styles.Header}>

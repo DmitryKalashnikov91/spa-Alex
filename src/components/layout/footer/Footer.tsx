@@ -3,7 +3,15 @@ import styles from './Footer.module.scss'
 import Image from 'next/image';
 import Link from 'next/link';
 
-const icons = [
+
+type TypeIcons = {
+    id: number,
+    imgSrc: string,
+    path: string,
+    size: number,
+    alt: string
+}
+const icons: TypeIcons[] = [
     {
         id: 1,
         imgSrc: '/Group.svg',
@@ -27,7 +35,7 @@ const icons = [
     },
 ]
 
-const Footer: FC = () => {
+const Footer: FC = (): JSX.Element => {
   return (
     <footer className={styles.Footer}>
         <div className={styles.Footer_links}>

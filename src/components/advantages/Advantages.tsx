@@ -1,7 +1,8 @@
+import { FC } from 'react';
 import Image from 'next/image';
 import styles from './Advatages.module.scss'
 
-type Props = {}
+type Props = {id?: number, imgSrc?: string, pictures?: [string], text?: string, text2?: string}
 const advantagesData = [
   {
     id: 1,
@@ -28,7 +29,7 @@ const advantagesData = [
   },
 ]
 
-const Advantages = (props: Props) => {
+const Advantages: FC = (props: Props): JSX.Element => {
   return (
     <section className={styles.Advantages}>
         {advantagesData.map(({ id, imgSrc, text, text2, pictures}) => (
@@ -50,7 +51,7 @@ const Advantages = (props: Props) => {
           <div key={imgSrc} className={styles.Advantages_about}>
             {imgSrc && <Image  src={imgSrc} width={200} height={300} alt={imgSrc}/>}
           </div>
-          <span className='text-white text-center'>{text} <p>{text2}</p></span>
+          <span className='text-white text-center text-sm'>{text} <p>{text2}</p></span>
             </div>
           ))
         }

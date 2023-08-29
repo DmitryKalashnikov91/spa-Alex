@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import Image from 'next/image'
-import { Roboto, Pacifico } from 'next/font/google'
+import { Roboto, Lobster } from 'next/font/google'
 import Layout from '@/components/layout/Layout';
 import styles from './Home.module.scss'
 import Advantages from '@/components/advantages/Advantages';
@@ -9,7 +9,7 @@ import AboutMassages from '@/components/aboutMassages/AboutMassages';
 import Link from 'next/link';
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
-const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] } )
+const lobster = Lobster({ subsets: ['latin'], weight: ['400'] } )
 
 
 const Home: FC = (): JSX.Element => {
@@ -19,8 +19,8 @@ const Home: FC = (): JSX.Element => {
 
   return (
     <Layout>
-    <div className={roboto.className + ' ' + styles.Home}>
-    <h1 className={pacifico.className + ' text-2xl p-10 text-center relative z-10'}>Профессиональный массажный салон</h1>
+    <div className={styles.Home}>
+    <h1 className={lobster.className + ' text-2xl p-10 text-center relative z-10'}>Профессиональный массажный салон</h1>
       <div className={styles.Home_content}>
         
         <div className='flex flex-col items-center content-center'>

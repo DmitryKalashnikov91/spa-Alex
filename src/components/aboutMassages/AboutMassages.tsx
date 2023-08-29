@@ -62,7 +62,7 @@ const massageDB: TypeMassages[]= [
 ]
 
 
-const AboutMassages: FC = (): JSX.Element => {
+const AboutMassages: FC = ()     => {
   return (
     <section className={styles.About} id='about'>
         <h2>Мы предлагаем:</h2>

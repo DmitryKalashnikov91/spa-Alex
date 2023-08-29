@@ -94,7 +94,7 @@ const ContactForm = () => {
                     {Buttons.map((btn) => (
                         <div key={btn.id} className='m-4'>
                             <Link href={btn.link} target='blank'>
-                                <Image src={btn.img} width={32} height={32} />
+                                <Image src={btn.img} width={32} height={32} alt={btn.img} />
                             </Link>
                         </div>
                     ))}

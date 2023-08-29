@@ -17,12 +17,3 @@ _tmr.push({ id: '3390197', type: 'pageView', start: new Date().getTime() });
         f();
     }
 })(document, window, 'tmr-code');
-<noscript>
-    <div>
-        <img
-            src='https://top-fwz1.mail.ru/counter?id=3390197;js=na'
-            style='position:absolute;left:-9999px;'
-            alt='Top.Mail.Ru'
-        />
-    </div>
-</noscript>;

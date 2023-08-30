@@ -69,12 +69,12 @@ const AboutMassages: FC = ()     => {
         <div className={styles.About_content}>
                 {massageDB.map(({id, name, text, price, time}) => (<div className={styles.About_content__block} key={id}>
                     
-                        <h3>{name}</h3>
+                        <h3 className='text-2xl'>{name}</h3>
                         <div className='flex justify-around text-purple-400 mb-4'>
                         <span>{price} рублей</span>    
                         <span>{time}</span>    
                     </div>
-                    <p>{text}</p>
+                    <p className='text-xl'>{text}</p>
                 </div>))}
         </div>
     </section>

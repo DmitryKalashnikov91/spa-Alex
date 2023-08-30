@@ -1,0 +1,13 @@
+@import '../../styles/media';
+.background {
+    &_img {
+        position: fixed;
+        object-position: 0 -500px;
+        z-index: -1;
+        @include media(tablet) {
+        object-position: 0 -220px;
+
+            height: 130vh;
+        }
+    }
+}

@@ -1,6 +1,14 @@
 @import '../../styles/media';
 .Main {
     max-width: 65%;
+    &_btn {
+        border: 1px solid hsl(51, 100%, 46%) ;
+        border-radius: 15px;
+        &:hover{
+            background: linear-gradient(20deg, #eac500, #eac500, #000);;
+            color: rgb(0, 0, 0);
+        }
+    }
     &_content {
         p {
             padding: 50px;

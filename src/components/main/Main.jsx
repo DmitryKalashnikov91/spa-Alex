@@ -14,7 +14,11 @@ const MainContent = () => {
                     alt='background massage'
                     className='rounded-3xl shadow-lg shadow-violet-100/50'
                 />
-                <button className='text-white text-center p-5 mt-11 flex font-bol bg-yellow-600'>
+                <button
+                    className={
+                        'text-white text-center p-5 mt-11 flex font-bol shadow-lg shadow-amber-300/50 ' +
+                        styles.Main_btn
+                    }>
                     <a href='#about'>Виды массажа </a>
                 </button>
             </div>
@@ -29,7 +33,7 @@ const MainContent = () => {
                         <Image src='/firstSale.jpg' width={300} height={300} alt='Скидка 20%' />
                     </div>
                     <button
-                        className={styles.Main_content__btn}
+                        className={styles.Main_btn + ' p-5 shadow-lg shadow-amber-300/50'}
                         onClick={() => router.push('/contacts')}>
                         ЗАПИСАТЬСЯ
                     </button>

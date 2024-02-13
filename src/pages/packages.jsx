@@ -1,4 +1,4 @@
-import AllPackages from '../components/screens/allPackages/allPackages'
+import AllPackages from '../components/screens/allPackages'
 
 const packages = () => {
 	return (

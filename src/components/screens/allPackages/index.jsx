@@ -1,8 +1,7 @@
 import Image from 'next/image'
 import styles from './AllPackages.module.scss'
-import { massageData } from './massageData'
+
 const AllPackages = () => {
-	console.log(massageData)
 	return (
 		<div className={styles.AllPackages}>
 			<h2>Пакеты услуг</h2>

@@ -1,34 +1,40 @@
 @import '../../styles/media';
 .Main {
-    max-width: 65%;
-    &_btn {
-        border: 1px solid hsl(51, 100%, 46%) ;
-        border-radius: 15px;
-        &:hover{
-            background: linear-gradient(20deg, #eac500, #eac500, #000);;
-            color: rgb(0, 0, 0);
-        }
-    }
-    &_content {
-        p {
-            padding: 50px;
-        }
-        @include media(mobile) {
-            p {
-            display: none;
-            }
-        }
-        &__btn {
-            text-align: center;
-            
-       
-        }
-        &__img {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-    }
+	> img {
+		position: absolute;
+		right: 15px;
+		top: 200px;
+	}
+	&_btn {
+		position: relative;
+		> span {
+			position: absolute;
+			top: 55%;
+			left: 35%;
+		}
+		&:hover {
+			background: linear-gradient(20deg, #eac500, #eac500, #000);
+			color: rgb(0, 0, 0);
+		}
+	}
+	&_content {
+		p {
+			padding: 50px;
+		}
+		@include media(mobile) {
+			p {
+				display: none;
+			}
+		}
+		&__btn {
+			text-align: center;
+		}
+		&__img {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 15px;
+		}
+	}
 }

@@ -1,13 +1,21 @@
 @import '../../styles/media';
 .background {
-    &_img {
-        position: fixed;
-        object-position: 0 -500px;
-        z-index: -1;
-        @include media(tablet) {
-        object-position: 0 -220px;
-
-            height: 130vh;
-        }
-    }
+	background: radial-gradient(
+		35.02% 40.51% at 50.15% 40%,
+		#b69dbf 0%,
+		#b1894e 0%,
+		#000 80.5%
+	);
+	@include media(mobile) {
+		background: radial-gradient(
+			65.02% 20.51% at 50.15% 20%,
+			#b69dbf 0%,
+			#b1894e 0%,
+			#000 80.5%
+		);
+	}
+	background-blend-mode: hue;
+	> img {
+		position: absolute;
+	}
 }

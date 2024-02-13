@@ -1,16 +1,14 @@
 .ContactForm {
-
-
-    &_buttons {
-        display: flex;
-        > div {
-            position: relative;
-            border: 2px solid white;
-            margin-right: 1rem;
-            background-color: rgb(45, 48, 48);
-            color: rgb(255, 80, 208);
-            padding: 10px;
-            border-radius: 20px;
-        }
-    }
+	&_buttons {
+		display: flex;
+		> div {
+			position: relative;
+			border: 2px solid white;
+			margin-right: 1rem;
+			background-color: rgb(45, 48, 48);
+			color: rgb(255, 80, 208);
+			padding: 10px;
+			border-radius: 20px;
+		}
+	}
 }

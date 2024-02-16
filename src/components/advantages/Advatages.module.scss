@@ -1,67 +1,19 @@
 @import '../../styles/media';
-
 .Advantages {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    &_about {
-        >img {
-            margin-top: 10px;
-        }
-    }
-
-    &_grid {
-       
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 4px;
-            grid-row-gap: 4px;
-
-            &__items {
-               > img {
-                height: 180px;
-                width: auto;
-                margin-top: 10px;
-                &:hover {
-                    transform: scale(1.4) translateX(-1rem);
-                    
-                }
-                
-               }
-            }
-    }
-
-    &_block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 300px;
-        @media (min-width: 1024px) {
-            height: auto;
-        }
-        transition: all 0.4s ease-in-out;
-        img {
-            transition: all 0.4s ease-in-out;
-        }
-            &:hover {
-                background: rgba(57, 34, 61, 0.6);
-                border: 2px solid #52184f;
-            }
-        border: solid 2px #FAFAB0;
-        @include media(laptop) {
-            width: 40vw;
-        }
-        @include media(tablet) {
-        width: 90%;
-        }
-        border-radius: 10px;
-        span {
-            padding: 20px 10px;
-        }
-    }
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 45px;
+	grid-row-gap: 45px;
+	margin: 40px 0;
+	color: antiquewhite;
+	&_card {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		border: 2px solid antiquewhite;
+		padding: 5px;
+		border-radius: 10px;
+	}
 }

@@ -1,0 +1,13 @@
+@import '../../styles/_media';
+
+.Reviews {
+	width: 560px;
+	height: 800px;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 30px;
+	margin-bottom: 50px;
+	@include media(mobile) {
+		width: 360px;
+	}
+}

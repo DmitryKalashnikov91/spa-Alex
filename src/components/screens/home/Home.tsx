@@ -1,7 +1,10 @@
 import AboutMassages from '@/components/aboutMassages/AboutMassages'
-import Advantages from '@/components/advantages/Advantages'
+
 import { Cormorant_Garamond, Roboto } from 'next/font/google'
 
+import Advantages from '@/components/advantages/Advantages'
+import Reviews from '@/components/reviews'
+import Image from 'next/image'
 import { FC, useEffect } from 'react'
 import MainContent from '../../main/Main'
 import styles from './Home.module.scss'
@@ -26,11 +29,17 @@ const Home: FC = (): JSX.Element => {
 				</h1>
 			}
 			<MainContent />
-			<h2 className='text-white mt-20 text-2xl text-center'>
-				Наши преимущества
-			</h2>
+
 			<Advantages />
 			<AboutMassages />
+			<Image
+				id='reviews'
+				src={'/sertifikat.jpg'}
+				width={150}
+				height={150}
+				alt='яндекс хорошее место'
+			/>
+			<Reviews />
 		</div>
 	)
 }

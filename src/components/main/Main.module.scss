@@ -2,8 +2,11 @@
 .Main {
 	> img {
 		position: absolute;
-		right: 15px;
+		right: 30px;
 		top: 200px;
+		@include media(tablet) {
+			right: 15px;
+		}
 	}
 	&_btn {
 		position: relative;

@@ -7,4 +7,9 @@
 	h3 {
 		color: antiquewhite;
 	}
+	hr {
+		color: antiquewhite;
+		border-style: dashed;
+		@apply my-3;
+	}
 }

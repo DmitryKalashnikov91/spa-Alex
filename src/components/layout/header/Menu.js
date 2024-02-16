@@ -19,4 +19,9 @@ export const Menu = [
 		name: 'Онлайн запись',
 		link: 'https://dikidi.net/922352',
 	},
+	{
+		id: '3kdjkw1',
+		name: 'Контакты',
+		link: '/contacts',
+	},
 ]

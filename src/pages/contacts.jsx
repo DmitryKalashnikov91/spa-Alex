@@ -5,7 +5,7 @@ import theme from '../config/theme'
 const Contacts = () => {
 	return (
 		<>
-			<section className='m-8'>
+			<section className='pt-44 pl-10 pb-16'>
 				<h2 className='text-white'>Spa ALex. Массажный кабинет</h2>
 				<p className='text-white'>
 					находится в ТЦ "Филион" ст. метро Фили, ул. Багратионовский пр-д, дом
@@ -18,7 +18,7 @@ const Contacts = () => {
 					<a href='mailto:spa.fili2021@gmail.com'>spa.fili2021@gmail.com</a>
 				</p>
 			</section>
-			<div className=''>
+			<div className='pb-16'>
 				<ChakraProvider theme={theme}>
 					<ContactForm />
 				</ChakraProvider>

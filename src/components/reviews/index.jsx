@@ -1,7 +1,7 @@
 import styles from './Reviews.module.scss'
 const Reviews = () => {
 	return (
-		<div className={styles.Reviews} id='reviews'>
+		<div className={styles.Reviews}>
 			<iframe
 				style={{
 					width: '100%',

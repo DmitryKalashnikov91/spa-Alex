@@ -8,12 +8,19 @@
 	margin: 40px 0;
 	color: antiquewhite;
 	&_card {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		justify-content: center;
 		border: 2px solid antiquewhite;
 		padding: 5px;
 		border-radius: 10px;
+		transition: all 0.6s;
+		&:hover {
+			color: #eac500;
+			border: 2px solid #eac500;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+		}
 	}
 }

@@ -7,7 +7,7 @@ export const Menu = [
 	{
 		id: '3k23241',
 		name: 'Массажисты',
-		link: '/#',
+		link: '/masseures',
 	},
 	{
 		id: '3ffjh1',

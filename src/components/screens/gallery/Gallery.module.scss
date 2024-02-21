@@ -1,0 +1,31 @@
+@import '../../../styles/media';
+
+.Gallery {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	-column-count: 3;
+	-webkit-column-width: 33%;
+	-moz-column-width: 33%;
+	-column-count: 33%;
+	padding: 180px 12px;
+	&_pics {
+		-webkit-transition: all 0.35s ease;
+		transition: all 0.35s ease;
+		margin-bottom: 12px;
+	}
+	@include media(tablet) {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		-column-count: 2;
+	}
+	@include media(mobile) {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		-column-count: 1;
+		-webkit-column-width: 100%;
+		-moz-column-width: 100%;
+		-column-count: 100%;
+	}
+}
+
+// model

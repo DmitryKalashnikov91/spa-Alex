@@ -9,20 +9,28 @@ const Advantages = () => {
 	return (
 		<section className={styles.Advantages}>
 			<div className={styles.Advantages_card}>
-				<BiSolidSpa size={50} />
-				<Link href={'#about'}>Виды услуг</Link>
+				<Link href={'#about'}>
+					<BiSolidSpa size={50} />
+					Виды услуг
+				</Link>
 			</div>
 			<div className={styles.Advantages_card}>
-				<FaUserNinja size={50} />
-				<Link href={'#about'}>Массажисты</Link>
+				<Link href={'/masseures'}>
+					<FaUserNinja size={50} />
+					Массажисты
+				</Link>
 			</div>
 			<div className={styles.Advantages_card}>
-				<ImImage size={50} />
-				<Link href={'#about'}>Внутри</Link>
+				<Link href={'/gallery'}>
+					<ImImage size={50} />
+					Галерея
+				</Link>
 			</div>
 			<div className={styles.Advantages_card}>
-				<TbMessageCircleStar size={50} />
-				<Link href={'#reviews'}>Отзывы</Link>
+				<Link href={'#reviews'}>
+					<TbMessageCircleStar size={50} />
+					Отзывы
+				</Link>
 			</div>
 		</section>
 	)

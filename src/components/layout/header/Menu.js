@@ -1,17 +1,12 @@
 export const Menu = [
 	{
-		id: '3kjdh1',
-		name: 'Услуги и цены',
-		link: '#about',
-	},
-	{
 		id: '3k23241',
 		name: 'Массажисты',
 		link: '/masseures',
 	},
 	{
 		id: '3ffjh1',
-		name: 'Пакеты услуг',
+		name: 'Цены и пакеты услуг',
 		link: '/packages',
 	},
 	{

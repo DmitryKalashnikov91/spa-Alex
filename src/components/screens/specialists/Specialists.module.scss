@@ -1,9 +1,15 @@
+@import '../../../styles/_media';
+
 .Specialists {
 	display: flex;
-	flex-direction: column;
-	gap: 70px;
+	flex-direction: row;
 	align-items: center;
-	padding-top: 150px;
+	justify-content: space-evenly;
+	@include media(tablet) {
+		flex-direction: column;
+		gap: 70px;
+	}
+	align-items: center;
 	padding-bottom: 150px;
 	&_card {
 		display: flex;

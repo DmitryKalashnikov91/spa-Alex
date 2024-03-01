@@ -1,24 +1,25 @@
 .Footer {
-    width: 100%;
-    margin-top: 10vh;
-    height: 40vh;
-    background: #2b1f1f;
-    border-top: solid 2px #FAFAB0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-        &_links {
-            display: flex;
-            gap: 30px;
-            img {
-                transition: all .4s;
-            }
-            img:hover {
-                transform: scale(1.2);
-            }
-    }
-    &_copyright {
-        margin-top: 20vh;
-    }
+	position: relative;
+	width: 100%;
+	margin-top: 10vh;
+	height: 40vh;
+	background: #2b1f1f;
+	border-top: solid 2px #fafab0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	&_links {
+		display: flex;
+		gap: 30px;
+		img {
+			transition: all 0.4s;
+		}
+		img:hover {
+			transform: scale(1.2);
+		}
+	}
+	&_copyright {
+		margin-top: 20vh;
+	}
 }

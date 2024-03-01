@@ -1,10 +1,4 @@
 @import '../../styles/media';
 .background {
 	background-color: black;
-	width: 100wv;
-	@include media(mobile) {
-	}
-	> img {
-		position: absolute;
-	}
 }

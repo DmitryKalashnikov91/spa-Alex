@@ -3,12 +3,12 @@ const Reviews = () => {
 	return (
 		<div className={styles.Reviews}>
 			<iframe
+				title='reviews yandex maps'
 				style={{
 					width: '100%',
 					height: '100%',
 					border: '1px solid #e6e6e6',
 					borderRadius: '8px',
-					boxSizing: 'border-box',
 				}}
 				src='https://yandex.ru/maps-reviews-widget/62360509408?comments'
 			></iframe>

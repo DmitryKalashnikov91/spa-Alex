@@ -18,9 +18,6 @@
 		align-items: center;
 		justify-content: center;
 		> img {
-			@include media(tablet) {
-				width: 350px;
-			}
 		}
 		&__btn {
 			background-color: #c353c3;

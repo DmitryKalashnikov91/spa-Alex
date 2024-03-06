@@ -10,21 +10,17 @@ const Advantages = () => {
 	const [ref, inView] = useInView(() => ({
 		from: {
 			opacity: 0,
-			x: -100,
 		},
 		to: {
 			opacity: 1,
-			x: 0,
 		},
 	}))
 	const [ref1, inView1] = useInView(() => ({
 		from: {
 			opacity: 0,
-			x: 100,
 		},
 		to: {
 			opacity: 1,
-			x: 0,
 		},
 	}))
 

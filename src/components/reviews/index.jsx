@@ -22,7 +22,6 @@ const Reviews = () => {
 					fontSize: '10px',
 					fontFamily: 'YS Text,sans-serif',
 					padding: '0 20px',
-					position: 'absolute',
 					bottom: '8px',
 					width: '100%',
 					textAlign: 'center',

@@ -1,6 +1,6 @@
 import AboutMassages from '@/components/aboutMassages/AboutMassages'
-
 import Advantages from '@/components/advantages/Advantages'
+import Reviews from '@/components/reviews'
 import { animated, useSpring } from '@react-spring/web'
 import { Cormorant_Garamond, Roboto } from 'next/font/google'
 import { FC, useEffect } from 'react'
@@ -41,6 +41,8 @@ const Home: FC = (): JSX.Element => {
 
 			<Advantages />
 			<AboutMassages />
+
+			<Reviews />
 		</div>
 	)
 }

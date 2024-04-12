@@ -1,4 +1,13 @@
 .AllPackages {
+	&_list {
+		text-align: justify;
+		> li {
+			background-color: rgba($color: #6a3e6f, $alpha: 0.7);
+			margin: 10px;
+			padding: 5px;
+			border-radius: 5px;
+		}
+	}
 	@apply flex flex-col  pt-40 items-center content-center;
 	> h2 {
 		@apply text-yellow-200 text-xl;
@@ -9,6 +18,7 @@
 		font-weight: 700;
 		font-size: x-large;
 	}
+
 	hr {
 		color: antiquewhite;
 		border-style: dashed;

@@ -2,8 +2,8 @@
 
 .Specialists {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
+	flex-direction: row;
 	justify-content: space-evenly;
 	@include media(tablet) {
 		flex-direction: column;
@@ -17,6 +17,7 @@
 		align-items: center;
 		color: aliceblue;
 		width: 250px;
+		height: 600px;
 		a {
 			font-size: 22px;
 		}

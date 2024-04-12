@@ -40,6 +40,22 @@ const Specialists = () => {
 						linkTo={'https://dikidi.net/922352?p=1.pi-mi&o=11&m=2096418'}
 					/>
 				</div>
+				<div className={styles.Specialists_card}>
+					<Image
+						src={'/OsteoMariya.jpg'}
+						width={250}
+						height={420}
+						alt='Мария Остеопат'
+					/>
+					<span>
+						<article>Мария</article>Остеопат, массажист-реабилитолог. Стаж
+						работы 10 лет.
+					</span>
+					<ButtonElement
+						content={'ЗАПИСАТЬСЯ'}
+						linkTo={'https://dikidi.net/922352?p=1.pi-mi&o=11&m=2096418'}
+					/>
+				</div>
 			</div>
 		</>
 	)

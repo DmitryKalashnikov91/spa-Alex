@@ -4,7 +4,7 @@ import styles from './AllPackages.module.scss'
 const AllPackages = () => {
 	return (
 		<div className={styles.AllPackages}>
-			<h2>Пакеты услуг</h2>
+			<h2>Вы покупаете только минуты, а массаж выбираете сами.</h2>
 			<Image src='/SpaAlex.jpg' width={200} height={200} alt='logoSA' />
 			<div className='px-5'>
 				<ul>

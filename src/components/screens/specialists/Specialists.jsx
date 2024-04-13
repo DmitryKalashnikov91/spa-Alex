@@ -53,7 +53,7 @@ const Specialists = () => {
 					</span>
 					<ButtonElement
 						content={'ЗАПИСАТЬСЯ'}
-						linkTo={'https://dikidi.net/922352?p=1.pi-mi&o=11&m=2096418'}
+						linkTo={'https://dikidi.net/922352?p=1.pi-mi&o=11&m=3185028'}
 					/>
 				</div>
 			</div>

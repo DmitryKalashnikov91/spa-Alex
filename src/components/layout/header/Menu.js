@@ -12,7 +12,7 @@ export const Menu = [
 	{
 		id: '3fpdsh1',
 		name: 'Онлайн запись',
-		link: 'https://dikidi.net/922352',
+		link: 'https://dikidi.net/g367474?p=0.sp',
 	},
 	{
 		id: '3kdjkw1',

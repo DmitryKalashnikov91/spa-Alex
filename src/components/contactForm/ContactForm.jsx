@@ -179,7 +179,6 @@ const ContactForm = () => {
 					type='text/javascript'
 					src='https://beauty.dikidi.net/assets/js/widget_record/widget2.min.js'
 				></Script>
-				<a href='https://beauty.dikidi.net/#widget=145990'>Записаться</a>
 				<Button
 					variant={'outline'}
 					colorScheme='blue'

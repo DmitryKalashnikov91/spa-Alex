@@ -13,7 +13,7 @@ const MainContent = () => {
 				<div className='mt-40 text-xl text-center text-white'>
 					<ButtonElement
 						content={'ЗАПИСАТЬСЯ'}
-						linkTo={'https://dikidi.net/922352'}
+						linkTo={'https://dikidi.net/g367474?p=0.sp'}
 					/>
 				</div>
 			</div>
